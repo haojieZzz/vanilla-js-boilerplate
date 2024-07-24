@@ -158,7 +158,11 @@
         Telegram.WebApp.onEvent('themeChanged', function() {
             document.body.setAttribute('style', '--bg-color:' + Telegram.WebApp.backgroundColor);
         });
-
+        // ton wallet
+        const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
+        manifestUrl: 'https://github.com/haojieZzz/vanilla-js-boilerplate/blob/master/tonconnect-manifest.json',
+        buttonRootId: 'ton-connect'
+    });
     </script>
 
     <!-- Eruda is console for mobile browsers -->
